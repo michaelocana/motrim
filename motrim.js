@@ -1,8 +1,13 @@
-/**
- * @file
- * Trim text based on parent element width by word.
+/*
+ * Copyright (c) 2015 Michael M. Ocana (me@michaelocana.com)
+ *
+ * jQuery moTrim plugin
+ * Version 1.0 (September 2015)
+ *
+ * Licensed under the MIT License
  */
 
+ /*global jQuery*/
 (function($) {
   if ($.fn.motrim) {
     return;
