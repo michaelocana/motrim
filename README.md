@@ -1,6 +1,6 @@
-# moTrim by Michael M. Ocana
+# motrim.js by Michael M. Ocana
 
-jQuery moTrim will trim long text by word.
+## A very lightweight plugin jQuery that will trim long text by word.
 
 Usage :
 
@@ -38,3 +38,11 @@ with 2 options :
 ```
 $('.text-box').motrim({width: '400px', ellipsis: '>>>'});
 ```
+
+# Browser support
+
+Compatible with All Browsers and IE7+.
+
+# License
+
+Unveil is licensed under the MIT license.
