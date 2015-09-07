@@ -21,12 +21,12 @@ without options :
 $('.text-box').motrim();
 
 with ellipsis option :
-- * default ellipsis is "..." *
+- *default ellipsis is "..."*
 
 $('.text-box').motrim({ellipsis: '>>>'});
 
 with width option :
-- * if no width specified, the default width is based from the parent element *
+- *if no width specified, the default width is based from the parent element*
 
 $('.text-box').motrim({width: '400px'});
 
