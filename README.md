@@ -5,11 +5,13 @@ Usage :
 
 In HTML :
 
+```
 <div class="wrapper" style="width:400px">
   <div class="text-box">
-    <a href="http :// this.is.the.link">Long message here will trim by words based on wrapper div</a>
+    <a href="http://this.is.the.link">Long message here will trim by words based on wrapper div</a>
   </div>
 </div>
+```
 
 In script :
 
