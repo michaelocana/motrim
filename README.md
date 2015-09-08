@@ -24,7 +24,7 @@ In HTML :
 </div>
 ```
 
-Fire the plugin onDocumentReady using the wrapper-selector.
+Fire the plugin onDocumentReady using the text-box selector.
 
 without options :
 
