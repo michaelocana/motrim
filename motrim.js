@@ -3,6 +3,7 @@
  *
  * jQuery moTrim plugin
  * Version 1.0 (September 2015)
+ * https://github.com/michaelocana/motrim
  *
  * Licensed under the MIT License
  */
