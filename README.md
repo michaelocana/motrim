@@ -46,6 +46,7 @@ with parameter ellipsis option :
 ```
 $(document).ready(function() {
   $('.text-box').motrim({cut_by: 'word', ellipsis: '>>>'});
+  $('.text-box-second').motrim({cut_by: 'word', ellipsis: '...'});
 });
 ```
 
@@ -61,6 +62,7 @@ with all the parameters :
 ```
 $(document).ready(function() {
   $('.text-box').motrim({cut_by: 'word', width: '400px', ellipsis: '>>>'});
+  $('.text-box-second').motrim({cut_by: 'word', width: '400px', ellipsis: '...'});
 });
 ```
 
