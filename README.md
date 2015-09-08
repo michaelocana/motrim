@@ -1,4 +1,4 @@
-# motrim.js by Michael M. Ocana
+# jquery.motrim.js by Michael M. Ocana
 
 ## A very lightweight plugin jQuery that will trim long text by word.
 
@@ -7,8 +7,8 @@ Include all nessesary .js-files inside the head-tag of the page.
 
 ```html
 <head>
-    <script src="jquery.js" type="text/javascript"></script>
-    <script src="motrim.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="jquery.motrim.js" type="text/javascript"></script>
 </head>
 ```
 
@@ -19,7 +19,13 @@ In HTML :
 ```html
 <div class="wrapper" style="width:400px">
   <div class="text-box">
-    <a href="http://this.is.the.link">Long message here will trim by words based on wrapper div</a>
+    <a href="http://this.is.the.link">Lorem Ipsum is simply dummy text of the printing and typesetting</a>
+  </div>
+</div>
+
+<div class="wrapper" style="width:400px">
+  <div class="text-box-second">
+    <a href="http://this.is.the.link">Lorem Ipsum is simply dummy text of the printing and typesetting</a>
   </div>
 </div>
 ```
@@ -27,26 +33,29 @@ In HTML :
 Fire the plugin onDocumentReady using the text-box selector.
 
 without options :
-
+*required parameter cut_by: (char/word)
 ```
-$('.text-box').motrim();
+$(document).ready(function() {
+  $('.text-box').motrim({cut_by: 'char'});
+  $('.text-box-second').motrim({cut_by: 'word'});
+});
 ```
 
 with parameter ellipsis option :
 - *default ellipsis is "..."*
 ```
-$('.text-box').motrim({ellipsis: '>>>'});
+$('.text-box').motrim({cut_by: 'word', ellipsis: '>>>'});
 ```
 
 with parameter width option :
 - *if no width specified, the default width is based from the parent element*
 ```
-$('.text-box').motrim({width: '400px'});
+$('.text-box').motrim({cut_by: 'word', width: '400px'});
 ```
 
-with 2 parameters :
+with all the parameters :
 ```
-$('.text-box').motrim({width: '400px', ellipsis: '>>>'});
+$('.text-box').motrim({cut_by: 'word', width: '400px', ellipsis: '>>>'});
 ```
 
 # Browser support

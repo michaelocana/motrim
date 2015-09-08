@@ -1,0 +1,24 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="jquery.motrim.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="wrapper" style="width:300px;border:1px solid red;padding: 5px;">
+  <div class="text-box">
+    <a href="http://this.is.the.link">Lorem Ipsum is simply dummy text of the printing and typesetting</a>
+  </div>
+</div>
+<div class="wrapper" style="width:300px;border:1px solid red;padding: 5px;">
+  <div class="text-box2">
+    <a href="http://this.is.the.link">Lorem Ipsum is simply dummy text of the printing and typesetting</a>
+  </div>
+</div>
+<script>
+  $(document).ready(function() {
+    $('.text-box').motrim({cut_by: 'char'});
+    $('.text-box2').motrim({cut_by: 'word'});
+  });
+</script>
+</body>
+</html>
