@@ -44,18 +44,24 @@ $(document).ready(function() {
 with parameter ellipsis option :
 - *default ellipsis is "..."*
 ```
-$('.text-box').motrim({cut_by: 'word', ellipsis: '>>>'});
+$(document).ready(function() {
+  $('.text-box').motrim({cut_by: 'word', ellipsis: '>>>'});
+});
 ```
 
 with parameter width option :
 - *if no width specified, the default width is based from the parent element*
 ```
-$('.text-box').motrim({cut_by: 'word', width: '400px'});
+$(document).ready(function() {
+  $('.text-box').motrim({cut_by: 'word', width: '400px'});
+});
 ```
 
 with all the parameters :
 ```
-$('.text-box').motrim({cut_by: 'word', width: '400px', ellipsis: '>>>'});
+$(document).ready(function() {
+  $('.text-box').motrim({cut_by: 'word', width: '400px', ellipsis: '>>>'});
+});
 ```
 
 # Browser support
